@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+text-decoration: none;
+font-family: sans-serif;
+
+font-family: "Beiruti", sans-serif;
+font-optical-sizing: auto;
+font-weight: auto;
+font-style: normal;
+scroll-behavior: smooth;
+transition: 0.5s ease;
+}
+:root{
+    --background-color: rgb(11, 37, 70) ;
+    --background2-color: rgba(11, 37, 70, 0.877);
+    --a-color: rgb(24, 45, 73);
+}
+header {
+   background: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 10px;
+    direction: ltr;
+    width: 100%;
+    position: fixed;
+    
+    z-index: 2
+    ;
+}header img
+{
+    width: 200px;
+}
+header nav
+{
+    display:flex ;
+    width: 50%;
+    justify-content: space-between;
+color: white;
+direction: ltr;
+
+}
+header nav a{
+    color: white;
+    text-transform: capitalize;
+}
+header nav a:hover{
+text-decoration: underline;
+}
+/*  main*/
+.intro{
+    background: 
+    var(--background2-color);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 94%, 81% 90%, 20% 100%, 0 94%, 0% 43%, 0 0);
+
+}
+.intro .img_intro{
+    width: 300px;
+}
+.intro .img_intro img{
+    width: 100%;
+}
+.intro .text{
+   margin-right: -1000px;
+    width: 60%;
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-right: -1000px;
+direction: rtl;
+}
+.intro .text h1{
+    font-size: 40px;
+
+    
+}
+.intro .text p{
+    font-size: 20px;
+    line-height: 30px;
+ word-spacing: 4px;
+ 
+}
+/* service */
+.service{
+position: relative;
+
+}
+ .serviceTitle{
+    text-align: center;
+    font-size: calc(10px *  3);
+color: var(--a-color);
+}
+.serInfo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+margin: 30px;
+}
+.serInfo .serCard{
+    display: flex;
+    flex-direction: column;
+    text-align:center ;
+ border: 1px solid var(--a-color) ;
+ color: var(--a-color);
+ padding: 10px;
+ border-radius: 10px;
+ width: 250px;
+gap: 20px;
+ align-items: center;
+ justify-content: space-between;
+ box-shadow: 0px  0px  20px var(--background-color);
+ transition: 0.2s ease-in;
+ margin: 10px;
+
+}.serInfo .serCard:hover{
+    color: white;
+    background-color: var(--background-color);
+}
+.serInfo .serCard i{
+    font-size: 40px;
+} 
+.serInfo .serCard h3{
+    font-size: 30px;
+}
+.serInfo .serCard p{
+    font-size: 25px;
+    font-weight: 400;
+}
+/* warning */
+.warning{
+    background-color: var(--background-color);
+text-align: center;
+padding: 50px;
+color: white;
+}
+.warning .war{
+    padding: 20px;
+}
+.warning i {
+    font-size: 40px;
+    margin: 20px;
+}
+.warning .war h2{
+    margin-top: 5px;
+}
+/* buy service */
+.service_cards {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+flex-wrap: wrap;
+direction: rtl;
+}
+.service_cards .card{
+    display: flex;
+flex-direction: column;
+justify-content: space-between;
+gap: 10px;
+margin: 20px;
+box-shadow: 0px 0px 10px var(--background-color);
+padding: 10px;
+border-radius: 10px;
+}
+.service_cards .card h1{
+    text-align: center;
+    font-size: 50px;
+}
+.service_cards .card .datalist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.service_cards .card:hover ,.serInfo .serCard:hover{
+    transform: scale(1.1);
+}
+
+.service_cards .card .datalist p span{
+    margin-right: 20px;
+}
+#by_the_servicce{
+    text-align: center;
+    background-color: var(--background-color);
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+#yes{
+    color: rgb(48s, 238, 48);
+}
+#no{
+    color: darkred;
+}
+/* foorter */
+footer{
+    background-color: var(--background-color);
+}
+footer img{
+    width: 200px;
+
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    
+}
+.logo .links{
+    margin-right: 20px;
+
+}
+.logo .links a{
+    margin-left: 20px;
+    font-size: 20px;
+    color: white;
+}
+#mounth{
+    font-size: 20px;
+    opacity: 0.7;
+}
